@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Validate</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/email.svg" alt="">
+                Let's Validate</div>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Enter your email to validate</h1>
+            <br><br>
+            <form id="emailForm">
+            <!-- Text input for username -->
+            <label for="username">Email ID:</label>
+            <input placeholder="Enter your email ID" type="text" id="username" name="username" required>
+            <br><br>
+
+            <!-- Submit button -->
+            <input type="submit" value="Submit" class="submit-btn" id="submit-btn">
+            </form>
+        </div>
+ 
+        <div class="container">
+            <div id="loader" class="loader" style="display:none;"></div>
+            <button id="copyBtn" style="display:none;" class="copy-btn">📋 Copy Result</button>
+            <div id="resultCont">
+            </div>
+        </div>
+    </main>
+    <footer>
+        Copyright Let's Validate | All Rights Reserved
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>
